@@ -4,48 +4,48 @@ public class TestCal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»¸öÊı×Ö");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•°å­—");
 		int  g=s.nextInt();
 		while(true){	
 			 
-		System.out.println("ÇëÊäÈëÒ»¸öÔËËã·½Ê½£¬+,-,*,/");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªè¿ç®—æ–¹å¼ï¼Œ+,-,*,/");
 		String l=s.next();
-		System.out.println("ÇëÊäÈëÒ»¸öÊı×Ö");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•°å­—");
 		int  f=s.nextInt();	
 		
 		char ch=l.charAt(0);
-		//´´½¨Ò»¸öCalµÄ¶ÔÏó
+		//åˆ›å»ºä¸€ä¸ªCalçš„å¯¹è±¡
 		
 		Cal cl = new Cal();
 		
-		//ÊôĞÔ£º¸³Öµ
+		//å±æ€§ï¼šèµ‹å€¼
 		cl.a = g;
 		cl.b = f;
 		
-		//ĞĞÎª£ºÔËËã
+		//è¡Œä¸ºï¼šè¿ç®—
 		if(ch=='+'){
 		int c=cl.jia();
 		g=c;
-		System.out.println("½á¹ûÊÇ"+c);
+		System.out.println("ç»“æœæ˜¯"+c);
 		}else if(ch=='-'){
 		//...
 		 int c=cl.jian();
 		 g=c;
-		System.out.println("½á¹ûÊÇ"+c);
+		System.out.println("ç»“æœæ˜¯"+c);
 		}else if(ch=='*'){
 		int  c=cl.cheng();
 		g=c;
-		System.out.println("½á¹ûÊÇ"+c);
+		System.out.println("ç»“æœæ˜¯"+c);
 		}else if(ch=='/'){
 		int c=cl.chu();
 		g=c;
-		System.out.println("½á¹ûÊÇ"+c);
+		System.out.println("ç»“æœæ˜¯"+c);
 		}else{
-			System.out.println("ÊäÈëÓĞÎó");
+			System.out.println("è¾“å…¥æœ‰è¯¯");
 		}
 		
 		}
 		
-	}
+	}//ä½•é›¨uyæ˜¯å°å¤©æ± 
 
 }
